@@ -1,0 +1,107 @@
+---
+---
+@charset 'utf-8';
+// see https://fonts.google.com/
+@import 'https://fonts.googleapis.com/css?family=Lora';
+
+$black: #000;
+
+%gray { color: lighten($black, 50); }
+
+.gray { @extend %gray; }
+
+%center { text-align: center; }
+
+.center { @extend %center; }
+
+* {
+  border: 0;
+  box-sizing: border-box;
+  font-family: 'Lora', 'Times New Roman', serif;
+  font-size: 18px;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  padding: 2em;
+}
+
+section {
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 100%;
+  width: 640px;
+}
+
+header {
+  @extend %center;
+
+  input {
+    border: 1px solid $black;
+    max-width: 100%;
+    padding: .2em .6em;
+  }
+
+  .photo {
+    height: 100px;
+    width: 100px;
+  }
+
+  form,
+  nav {
+    margin: .4em 0;
+  }
+
+  ul li {
+    display: inline;
+    margin-right: .4em;
+  }
+}
+
+article {
+  margin: 4em 0;
+
+  h1 {
+    font-size: 1.8em;
+    font-weight: bold;
+  }
+
+  h2 {
+    font-size: 1.4em;
+    font-weight: bold;
+  }
+
+  p,
+  h1,
+  h2,
+  h3,
+  ul,
+  ol {
+    margin-bottom: .5em;
+    margin-top: .5em;
+  }
+
+  ul,
+  ol {
+    margin-left: 3em;
+  }
+}
+
+footer {
+  @extend %gray;
+  @extend %center;
+  font-size: .8em;
+}
+
+code {
+  background-color: lighten($black, 90);
+  border-radius: .2em;
+  font-family: monospace;
+  padding: .1em .2em;
+}
+
+.giscus {
+  margin: 4em 0;
+}
+

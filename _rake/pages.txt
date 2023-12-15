@@ -1,0 +1,7 @@
+CNAME
+robots.txt
+about.html
+404.html
+favicon.ico
+sitemap.xml
+css/main.css

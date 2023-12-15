@@ -1,0 +1,35 @@
+title: Fredi Talks
+email: fredikats@outlook.com
+description: >
+  Fredi Kats's Personal blog
+url: https://fredikats.com
+github_username: fredikats
+markdown: kramdown
+author:
+  name: "Fredi Kats"
+  email: fredikats@outlook.com
+encoding: utf-8
+timezone: Germany/Berlin
+permalink: :year/:month/:day/:title.html
+exclude:
+  - tmp/
+  - vendor/
+  - README.md
+  - Gemfile.lock
+  - Gemfile
+  - Rakefile
+  - LICENSE.txt
+
+plugins:
+  - jekyll-feed
+  - jekyll-paginate
+  - jekyll-sitemap
+
+paginate: 8
+paginate_path: "p/:num"
+excerpt_separator: <!--more-->
+
+sass:
+  style: compressed
+  deploy_style: compressed
+  compile_in_place: false

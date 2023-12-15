@@ -1,0 +1,46 @@
+---
+layout: compress
+---
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en-US" xml:lang="en-US"
+  itemscope="" itemtype="http://schema.org/WebPage">
+  <head>
+    <meta charset="utf-8"/>
+    <meta name="description" content="{{ page.description }}" />
+    <meta name="keywords" content="{{ page.keywords | join:', ' | xml_escape }}" />
+    <meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1"/>
+    <link rel="shortcut icon" href="{{site.baseurl}}/favicon.ico"/>
+    <title>{{ page.title }}</title>
+    <link rel="stylesheet" href="{{site.baseurl}}/css/main.css"/>
+  </head>
+  <body>
+    <section>
+      <header>
+        <a href="{{site.baseurl}}/about.html">
+          <img src="{{site.baseurl}}/images/Kysect.png" class="photo" alt="Kysect-logo" itemprop="image"/>
+        </a>
+        <nav>
+          <ul>
+            <li><a href="{{site.baseurl}}/">Home</a></li>
+            <li><a href="{{site.baseurl}}/about.html">About</a></li>
+          </ul>
+        </nav>
+        <nav>
+          <ul>
+            <li><a href="https://Github.com/FrediKats">Github</a></li>
+            <li><a href="https://t.me/FrediKats">Telegram</a></li>
+          </ul>
+        </nav>
+      </header>
+      {{ content }}
+      <footer>
+        (c)
+        <span itemscope="" itemtype="http://schema.org/Person">
+          <span itemprop="name">Fredi Kats</span>
+        </span>
+        <br/>
+        2023
+      </footer>
+    </section>
+  </body>
+</html>

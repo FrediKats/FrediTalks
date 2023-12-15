@@ -1,0 +1,46 @@
+---
+layout: default
+---
+
+<article itemscope="" itemtype="http://schema.org/BlogPosting">
+  <div itemprop="image" itemscope="" itemtype="http://schema.org/ImageObject">
+    <meta itemprop="url" content="{{ site.url }}/images/Kysect.png"/>
+    <meta itemprop="height" content="250"/>
+    <meta itemprop="width" content="250"/>
+  </div>
+  <meta itemprop="image" content=""/>
+  <div itemscope="" itemprop="author" itemtype="http://schema.org/Person">
+    <meta itemprop="name" content="Fredi Kats"/>
+  </div>
+  <div itemscope="" itemprop="publisher" itemtype="http://schema.org/Organization">
+    <meta itemprop="name" content="Fredi Talks"/>
+    <div itemprop="logo" itemscope="" itemtype="http://schema.org/ImageObject">
+      <meta itemprop="url" content="{{ site.url }}/images/Kysect.png"/>
+      <meta itemprop="height" content="250"/>
+      <meta itemprop="width" content="250"/>
+    </div>
+  </div>
+  <p>
+    <span itemprop="datePublished dateModified" datetime="{{ page.date | date_to_xmlschema }}">
+      {{ page.date | date: "%B %-d, %Y" }}
+    </span>
+  </p>
+  <h1 itemprop="name headline mainEntityOfPage">{{ page.title }}</h1>
+  {{ content }}
+</article>
+
+<script src="https://giscus.app/client.js"
+        data-repo="FrediKats/FrediTalks"
+        data-repo-id="R_kgDOK54qEw"
+        data-category="Announcements"
+        data-category-id="DIC_kwDOK54qE84Cbvpb"
+        data-mapping="title"
+        data-strict="0"
+        data-reactions-enabled="1"
+        data-emit-metadata="0"
+        data-input-position="bottom"
+        data-theme="light"
+        data-lang="en"
+        crossorigin="anonymous"
+        async>
+</script>
