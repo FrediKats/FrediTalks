@@ -2,7 +2,12 @@
 
 source 'https://rubygems.org'
 
-gem 'github-pages', '228', group: :jekyll_plugins
+gem 'jekyll', '4.3.2'
+gem 'jekyll-feed', '0.17.0'
+gem 'jekyll-paginate', '1.1.0'
+gem 'jekyll-sitemap', '1.4.0'
+
+# gem 'github-pages', '228', group: :jekyll_plugins
 gem 'html-proofer', '5.0.8'
 gem 'rake', '13.0.6'
 gem 'rubocop', '1.56.0'
